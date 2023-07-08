@@ -11,8 +11,8 @@ def compare():
     Equipment.call()
 
 
-my_dic = {"add have": Equipment.set_have, "add need": Equipment.set_need, "remove have": Equipment.del_have,
-          "remove need": Equipment.del_need, "see": Equipment.get_all, "compare": compare, }
+my_dic = {"ahave": Equipment.set_have, "aneed": Equipment.set_need, "rhave": Equipment.del_have,
+          "rneed": Equipment.del_need, "see": Equipment.get_all, "compare": compare, "menu": switch.change_value}
 
 
 def run():

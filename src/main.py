@@ -2,10 +2,11 @@ import utils
 from others.Title import say_title_name
 from responses import GenericResponses
 from responses import HealthTips
-from classes.Switch import MySwitch
+import classes
 import Appointment
+import CompareEquipment
 
-switch = MySwitch()
+switch = classes.MySwitch()
 
 
 def farewell():
@@ -17,7 +18,7 @@ def farewell():
 # will excute
 my_dic = {'hello': GenericResponses.say_hi, "who": GenericResponses.introduction,
           "help": GenericResponses.help, "prank": GenericResponses.prank,
-          'goodbye': farewell, "tips": HealthTips.sayTips, "appointment": Appointment.run}
+          'goodbye': farewell, "tips": HealthTips.sayTips, "appointment": Appointment.run, "equipment": CompareEquipment.run}
 
 
 def main():

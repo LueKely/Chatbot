@@ -21,7 +21,7 @@ class MyEquipment:
     def set_have(self):
         user_input = input(
             "DIWATA: Please insert a value to the set of equipment that you have in possession \n USER: ")
-        self._need.add(user_input)
+        self._have.add(user_input)
         print("DIWATA: Value Added")
 
     def del_need(self):
@@ -33,7 +33,7 @@ class MyEquipment:
     def del_have(self):
         user_input = input(
             "DIWATA: Please insert a value to the set of equipment \nthat you have in possession the you want to delete \n USER: ")
-        self._need.remove(user_input)
+        self._have.remove(user_input)
         print("DIWATA: Value deleted")
 
     def look(self):
