@@ -2,7 +2,7 @@
 import random
 
 def say_hi():
-   response = ['Hello user', 'How can i help you?', 'How may i assist you?']
+   response = ['Hello user', 'How can i help you?', 'How may i assist you?',"Good day, How may i assist you?"]
    print('DIWATA: '+random.choice(response) )
 
 def help():
