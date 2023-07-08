@@ -1,4 +1,3 @@
-import re
 import utils
 from others.Title import say_title_name
 from responses import GenericResponses
