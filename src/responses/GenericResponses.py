@@ -24,8 +24,9 @@ def help():
     print("sick to check the posibilities of symptomes that user have")
     print("tips to get some HealthTips")
     print("kamusta to greet the user in the tagalog language")
-    print("patientlist to check the list of the patients")
-    print("goodbye to close the chatbot")
+    print("Patientlist to check the list of the patients")
+    print("Goodbye to close the chatbot")
+    print("employees - lists all the employee in the hospital")
 
 
 def introduction():

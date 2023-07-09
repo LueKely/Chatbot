@@ -31,7 +31,7 @@ my_dic = {'hello': GenericResponses.say_hi,
           "sick": CheckSymptomes.run,
           "kamusta": GenericResponses.tagalog,
           "patientlist": stack.run,
-          "charge": Heirarchy.run}
+          "employees": Heirarchy.run}
 
 
 def main():
