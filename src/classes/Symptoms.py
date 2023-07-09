@@ -3,6 +3,7 @@ class MySymptoms:
         self._db = {"common cold": {"fever", "cough", "high temperature"},
                     "COVID 19": {"no sense of taste", "cough", "high temperature", "fever"},
                     "diarrhea": {"abdominal cramps", "abdominal pain", "watery stools"}}
+
         self._symptomes = ""
         self._arr = []
         self._set = set([])
@@ -13,15 +14,20 @@ class MySymptoms:
 
         self._symptomes = input(
             "DIWATA: Please insert your symptoms and seperate them into a comma \nUSER: ")
-
-        self._arr.extend(self._symptomes.split(','))
-
-        for item in self._arr:
-            self._set.add(item.lower())
+        if (self.compare_symptomes != ""):
+            self._arr.extend(self._symptomes.split(','))
+            for item in self._arr:
+                self._set.add(item.lower())
+        else:
+            print("DIWATA: Please insert your symtomes")
 
     def get_symptomes(self):
-        print("DIWATA: These are your symptoms that you are experiencing")
-        print(self._set)
+        if (len(self._set) != 0):
+            print("DIWATA: These are your symptoms that you are experiencing")
+            print(self._set)
+            print("DIWATA: Please get professional help for further info")
+        else:
+            print("DIWATA: Looks like this is not in our database")
 
     def compare_symptomes(self):
         # loops through the keys
@@ -33,7 +39,3 @@ class MySymptoms:
     def get_conclusion(self):
         print("DIWATA: Here are the possible outcomes:")
         print(self._conclusion)
-
-# print(test.compare_symptomes())
-
-# test.compare_symptomes()

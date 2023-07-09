@@ -5,6 +5,7 @@ from responses import HealthTips
 import classes
 import Appointment
 import CompareEquipment
+import CheckSymptomes
 
 switch = classes.MySwitch()
 
@@ -16,9 +17,10 @@ def farewell():
 
 # the list of commands, the key words will correspond to the function that
 # will excute
+
 my_dic = {'hello': GenericResponses.say_hi, "who": GenericResponses.introduction,
           "help": GenericResponses.help, "prank": GenericResponses.prank,
-          'goodbye': farewell, "tips": HealthTips.sayTips, "appointment": Appointment.run, "equipment": CompareEquipment.run}
+          'goodbye': farewell, "tips": HealthTips.sayTips, "appointment": Appointment.run, "equipment": CompareEquipment.run, "sick": CheckSymptomes.run}
 
 
 def main():
