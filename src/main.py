@@ -7,6 +7,7 @@ import Appointment
 import CompareEquipment
 import CheckSymptomes
 import stack
+import Heirarchy
 switch = classes.MySwitch()
 
 
@@ -29,7 +30,8 @@ my_dic = {'hello': GenericResponses.say_hi,
           "equipment": CompareEquipment.run,
           "sick": CheckSymptomes.run,
           "kamusta": GenericResponses.tagalog,
-          "patientlist": stack.run}
+          "patientlist": stack.run,
+          "charge": Heirarchy.run}
 
 
 def main():
