@@ -8,6 +8,7 @@ import CompareEquipment
 import CheckSymptomes
 import stack
 import Heirarchy
+import ListMedication
 switch = classes.MySwitch()
 
 
@@ -31,11 +32,13 @@ my_dic = {'hello': GenericResponses.say_hi,
           "sick": CheckSymptomes.run,
           "kamusta": GenericResponses.tagalog,
           "patientlist": stack.run,
-          "employees": Heirarchy.run}
+          "employees": Heirarchy.run,
+          "medicine": ListMedication.run}
 
 
 def main():
     say_title_name()
+
     while True:
         if switch._value == False:
             break
