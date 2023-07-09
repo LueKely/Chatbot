@@ -4,7 +4,7 @@ import utils
 queue = classes.MyQueue()
 switch = classes.MySwitch()
 
-my_dic = {"peek": queue.peek, "ahead": queue.peek,
+my_dic = {"peek": queue.peek, "ahead": queue.look,
           "fall": queue.enqueue, "finished": queue.dequeue, "menu": switch.change_value, "look": queue.look}
 
 
