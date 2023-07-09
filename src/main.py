@@ -6,7 +6,7 @@ import classes
 import Appointment
 import CompareEquipment
 import CheckSymptomes
-
+import stack
 switch = classes.MySwitch()
 
 
@@ -18,9 +18,18 @@ def farewell():
 # the list of commands, the key words will correspond to the function that
 # will excute
 
-my_dic = {'hello': GenericResponses.say_hi, "who": GenericResponses.introduction,
-          "help": GenericResponses.help, "prank": GenericResponses.prank,
-          'goodbye': farewell, "tips": HealthTips.sayTips, "appointment": Appointment.run, "equipment": CompareEquipment.run, "sick": CheckSymptomes.run}
+my_dic = {'hello': GenericResponses.say_hi,
+          "hi": GenericResponses.say_hi,
+          "who": GenericResponses.introduction,
+          "help": GenericResponses.help,
+          "prank": GenericResponses.prank,
+          'goodbye': farewell,
+          "tips": HealthTips.sayTips,
+          "appointment": Appointment.run,
+          "equipment": CompareEquipment.run,
+          "sick": CheckSymptomes.run,
+          "kamusta": GenericResponses.tagalog,
+          "patientlist": stack.run}
 
 
 def main():
