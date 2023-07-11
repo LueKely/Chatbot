@@ -11,7 +11,7 @@ def result():
 
 
 my_dic = {"here": Symptoms.set_symptomes,
-          "see": Symptoms.get_symptomes, "results": result, "Exit": switch.change_value}
+          "see": Symptoms.get_symptomes, "results": result, "exit": switch.change_value}
 
 
 def run():
