@@ -10,7 +10,7 @@ my_dic = {"insert": medication.set_data,
           "end": medication.get_tail,
           "deltail": medication.remove_tail,
           "remove": medication.remove,
-          "delhead": medication.remove_head}
+          "delhead": medication.remove_head, }
 
 
 def run():
